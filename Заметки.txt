@@ -1,0 +1,26 @@
+mc
+
+Решатели [на моей локальной тачке]:
+/usr/lib/openfoam/openfoam2312/applications/solvers
+
+Репы, полезные ссылки:
+https://develop.openfoam.com/Development/openfoam
+https://github.com/furstj/myFoam/tree/master
+https://www.foamacademy.com/wp-content/uploads/2018/03/thermo_training_handout_public.pdf
+
+файл coordinates хранит точки
+файл blockMeshDict там есть пару переменных с размерами, для вычисления точек
+файл tmpVars хранит тоже какие то высчитываемые переменные
+
+Скопировать из исходника в текущий каталог:
+cp -r cp -r ./sources/tube .
+
+cd tube
+blockMesh
+foamRun -solver movingMesh  # здесь пробуем другие решатели типа buoyantBoussinesq-*-Foam
+foamJob buoyantBoussinesqPimpleFoam
+        ---> (foamJob -no-log buoyantBoussinesqPimpleFoam)
+
+---> sudo apt install paraview
+
+paraFoam
