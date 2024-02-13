@@ -1,0 +1,40 @@
+vertices (
+  ( 0.0    0.0    $tz0m ) // 0
+  ( 0.0    0.0    $tz2m ) // 1
+  ( $tz3   0.0    $tz3m ) ( $txy3  $txy3  $tz3m ) ( 0.0   $tz3   $tz3m ) ( $txy3m $txy3  $tz3m )
+  ( $tz3m  0.0    $tz3m ) ( $txy3m $txy3m $tz3m ) ( 0.0   $tz3m  $tz3m ) ( $txy3  $txy3m $tz3m ) ( 0 0 0 ) ( 0 0 0 ) // 11
+  ( $tz1   0.0    $tz1m ) ( $txy1  $txy1  $tz1m ) ( 0.0   $tz1   $tz1m ) ( $txy1m $txy1  $tz1m )
+  ( $tz1m  0.0    $tz1m ) ( $txy1m $txy1m $tz1m ) ( 0.0   $tz1m  $tz1m ) ( $txy1  $txy1m $tz1m ) ( 0 0 0 ) // 20
+  ( 0.0    0.0    0.0   ) // 21
+  ( $tz2   0.0    0.0   ) ( $txy4  $txy4  0.0   ) ( 0.0   $tz2   0.0   ) ( $txy4m $txy4  0.0 )
+  ( $tz2m  0.0    0.0   ) ( $txy4m $txy4m 0.0   ) ( 0.0   $tz2m  0.0   ) ( $txy4  $txy4m 0.0 ) ( 0 0 0 ) ( 0 0 0 ) // 31
+  ( $Rb    0.0    0.0   ) ( $tz1   $tz1   0.0   ) ( 0.0   $Rb    0.0   ) ( $tz1m  $tz1   0.0 )
+  ( $tz0m  0.0    0.0   ) ( $tz1m  $tz1m  0.0   ) ( 0.0   $tz0m  0.0   ) ( $tz1   $tz1m  0.0 ) ( 0 0 0 ) // 40
+  ( 0.0    0.0    $tz5  ) // 41
+  ( $tx5   0.0    $tz5  ) ( $txy5  $txy5  $tz5  ) ( 0.0   $tx5   $tz5  ) ( $txy5m $txy5  $tz5 )
+  ( $tx5m  0.0    $tz5  ) ( $txy5m $txy5m $tz5  ) ( 0.0   $tx5m  $tz5  ) ( $txy5  $txy5m $tz5 ) ( 0 0 0 ) ( 0 0 0 ) // 51
+  ( $tx6   0.0    $tz5  ) ( $txy6  $txy6  $tz5  ) ( 0.0   $tx6   $tz5  ) ( $txy6m $txy6  $tz5 )
+  ( $tx6m  0.0    $tz5  ) ( $txy6m $txy6m $tz5  ) ( 0.0   $tx6m  $tz5  ) ( $txy6  $txy6m $tz5 ) ( 0 0 0 ) // 60
+  ( 0.0    0.0    $tz7  ) // 61
+  ( $tx7   0.0    $tz7  ) ( $txy7  $txy7  $tz7  ) ( 0.0   $tx7   $tz7  ) ( $txy7m $txy7  $tz7 )
+  ( $tx7m  0.0    $tz7  ) ( $txy7m $txy7m $tz7  ) ( 0.0   $tx7m  $tz7  ) ( $txy7  $txy7m $tz7 ) ( 0 0 0 ) ( 0 0 0 ) // 71
+  ( $tx8   0.0    $tz7  ) ( $txy8  $txy8  $tz7  ) ( 0.0   $tx8   $tz7  ) ( $txy8m $txy8  $tz7 )
+  ( $tx8m  0.0    $tz7  ) ( $txy8m $txy8m $tz7  ) ( 0.0   $tx8m  $tz7  ) ( $txy8  $txy8m $tz7 ) ( 0 0 0 ) // 80
+);
+
+//y154_5   #calc "$Sin675 * $CSr2";   z154_5   #calc "$Sin225 * $CSr2";
+//y155_6   #calc "-$Sin225 * $CSr2";   z155_6   #calc "- $Sin675 * $CSr2";
+
+//y168_9   #calc "$Sin075 * $CSr5";   z168_9   #calc "$Sin825 * $CSr5";
+//y169_0   #calc "$Sin225 * $CSr5";   z169_0   #calc "$Sin675 * $CSr5";
+//y170_1   #calc "$Sin375 * $CSr5";   z170_1   #calc "$Sin525 * $CSr5";
+//y171_2   #calc "$Sin525 * $CSr5";   z171_2   #calc "$Sin375 * $CSr5";
+//y172_3   #calc "$Sin675 * $CSr5";   z172_3   #calc "$Sin225 * $CSr5";
+//y173_4   #calc "$Sin825 * $CSr5";   z173_4   #calc "$Sin075 * $CSr5";
+
+//y175_6   #calc "$Sin075 * $CSr6";   z175_6   #calc "$Sin825 * $CSr6";
+//y176_7   #calc "$Sin225 * $CSr6";   z176_7   #calc "$Sin675 * $CSr6";
+//y177_8   #calc "$Sin375 * $CSr6";   z177_8   #calc "$Sin525 * $CSr6";
+//y178_9   #calc "$Sin525 * $CSr6";   z178_9   #calc "$Sin375 * $CSr6";
+//y179_0   #calc "$Sin675 * $CSr6";   z179_0   #calc "$Sin225 * $CSr6";
+//y180_1   #calc "$Sin825 * $CSr6";   z180_1   #calc "$Sin075 * $CSr6";
