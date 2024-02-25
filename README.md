@@ -17,6 +17,7 @@ tail -f log
 decomposePar
 mpirun -np 4 buoyantBoussinesqPimpleFoam -parallel
 ??????????reconstructPar -latestTime??????????????
+https://www.openfoam.com/documentation/guides/latest/man/reconstructPar.html
 touch results.foam
 https://www.youtube.com/watch?v=YdYHDMygNPU&ab_channel=Interfluo
 
