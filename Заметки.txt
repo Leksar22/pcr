@@ -24,3 +24,32 @@ foamJob buoyantBoussinesqPimpleFoam
 ---> sudo apt install paraview
 
 paraFoam
+
+
+
+* postProcess утилита (посмотреть как работает)
+Умеет работать с данными из командной строки
+Можно удобно сравнить несколько решений
+
+0. Текущий результат сохранить (неплохой)
+1. Починить кончик
+2. Попробовать другие решатели
+3. Интересующие величины (температура, скорость). Сравнить.
+4. Поменять решатели (
+    rhoPimpleFoam,
+    (на потом)
+    https://www.hydrothermalfoam.info/manual/en/index.html,
+    https://www.hydrothermalfoam.info/manual/en/Models_Equations/model.html#porous-medium-properties
+    )
+5*. Попробовать интегрировать https://holzmann-cfd.com/community/blog-and-tools/cae-blog/thermophysical-properties-water
+
+
+
+
+
+
+
+
+
+
+
