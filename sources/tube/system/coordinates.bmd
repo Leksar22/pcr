@@ -1,5 +1,6 @@
 vertices (
   ( 0.0    0.0    $tz0m ) // 0
+  // ( 0.0    0.0    $tz0m ) // 1
   ( 0.0    0.0    $tz2m ) // 1
   ( $tz3   0.0    $tz3m ) ( $txy3  $txy3  $tz3m ) ( 0.0   $tz3   $tz3m ) ( $txy3m $txy3  $tz3m )
   ( $tz3m  0.0    $tz3m ) ( $txy3m $txy3m $tz3m ) ( 0.0   $tz3m  $tz3m ) ( $txy3  $txy3m $tz3m ) ( 0 0 0 ) ( 0 0 0 ) // 11
@@ -20,6 +21,38 @@ vertices (
   ( $tx7m  0.0    $tz7  ) ( $txy7m $txy7m $tz7  ) ( 0.0   $tx7m  $tz7  ) ( $txy7  $txy7m $tz7 ) ( 0 0 0 ) ( 0 0 0 ) // 71
   ( $tx8   0.0    $tz7  ) ( $txy8  $txy8  $tz7  ) ( 0.0   $tx8   $tz7  ) ( $txy8m $txy8  $tz7 )
   ( $tx8m  0.0    $tz7  ) ( $txy8m $txy8m $tz7  ) ( 0.0   $tx8m  $tz7  ) ( $txy8  $txy8m $tz7 ) ( 0 0 0 ) // 80
+
+  ( 0 0 0 ) // 81
+  ( $tz3   0.0    $tz0m ) // 82
+  ( $txy3  $txy3  $tz0m ) // 83
+  ( 0.0   $tz3   $tz0m ) // 84
+  ( $txy3m $txy3  $tz0m ) // 85
+  ( $tz3m  0.0    $tz0m ) // 86
+  ( $txy3m $txy3m $tz0m ) // 87
+  ( 0.0   $tz3m  $tz0m ) // 88
+  ( $txy3  $txy3m $tz0m ) // 89
+
+
+  ( 0 0 0 ) // 90
+  ( 0 0 0 ) // 91
+  ( $tz3_half   0.0    $tz3m ) // 92
+  ( $txy3_half  $txy3_half  $tz3m ) // 93
+  ( 0.0   $tz3_half   $tz3m )  // 94
+  ( $txy3m_half $txy3_half  $tz3m ) // 95
+  ( $tz3m_half  0.0    $tz3m ) // 96
+  ( $txy3m_half $txy3m_half $tz3m ) // 97
+  ( 0.0   $tz3m_half  $tz3m )  // 98
+  ( $txy3_half  $txy3m_half $tz3m ) // 99
+
+  // ( $t1   0.0    $tz0m )  // 82
+  // ( $t2  $t2  $tz0m )  // 83
+  // ( 0.0   $t1   $tz0m )  // 84
+  // ( $t3 $t2  $tz0m )  // 85
+  // ( $t4  0.0    $tz0m )  // 86
+  // ( $t3 $t3 $tz0m )  // 87
+  // ( 0.0   $t4  $tz0m )  // 88
+  // ( $t2  $t3 $tz0m )  // 89
+
 );
 
 //y154_5   #calc "$Sin675 * $CSr2";   z154_5   #calc "$Sin225 * $CSr2";

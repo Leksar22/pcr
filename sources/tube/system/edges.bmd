@@ -1,47 +1,5 @@
 edges
 (
-  arc 72 73 ( $tc82  $tc81  $tz7 )
-  arc 73 74 ( $tc81  $tc82  $tz7 )
-  arc 74 75 ( $tc81m $tc82  $tz7 )
-  arc 75 76 ( $tc82m $tc81  $tz7 )
-  arc 76 77 ( $tc82m $tc81m $tz7 )
-  arc 77 78 ( $tc81m $tc82m $tz7 )
-  arc 78 79 ( $tc81  $tc82m $tz7 )
-  arc 79 72 ( $tc82  $tc81m $tz7 )
 
-  arc 52 53 ( $tc62  $tc61  $tz5 )
-  arc 53 54 ( $tc61  $tc62  $tz5 )
-  arc 54 55 ( $tc61m $tc62  $tz5 )
-  arc 55 56 ( $tc62m $tc61  $tz5 )
-  arc 56 57 ( $tc62m $tc61m $tz5 )
-  arc 57 58 ( $tc61m $tc62m $tz5 )
-  arc 58 59 ( $tc61  $tc62m $tz5 )
-  arc 59 52 ( $tc62  $tc61m $tz5 )
-
-  arc 32 33 ( $tc02  $tc01  0.0 )
-  arc 33 34 ( $tc01  $tc02  0.0 )
-  arc 34 35 ( $tc01m $tc02  0.0 )
-  arc 35 36 ( $tc02m $tc01  0.0 )
-  arc 36 37 ( $tc02m $tc01m 0.0 )
-  arc 37 38 ( $tc01m $tc02m 0.0 )
-  arc 38 39 ( $tc01  $tc02m 0.0 )
-  arc 39 32 ( $tc02  $tc01m 0.0 )
-
-//  arc 12 32 ( #calc "cos(3.1415926/8.0) * $Rb"  0.0 #calc "- sin(3.1415926/8.0) * $Rb" )
-//  arc 12 32 ( $tc02 0.0 $tc01m )
-
-  arc 12 13 ( $tc32 $tc31 $tz1m )
-  arc 13 14 ( $tc31 $tc32 $tz1m )
-  arc 14 15 ( $tc31m $tc32 $tz1m )
-  arc 15 16 ( $tc32m $tc31 $tz1m )
-  arc 16 17 ( $tc32m $tc31m $tz1m )
-  arc 17 18 ( $tc31m $tc32m $tz1m )
-  arc 18 19 ( $tc31 $tc32m $tz1m )
-  arc 19 12 ( $tc32 $tc31m $tz1m )
-
-  arc 0 12 ( $tc01 0.0 $tc02m )
-  arc 0 14 ( 0.0 $tc01 $tc02m )
-  arc 0 16 ( $tc01m 0.0 $tc02m )
-  arc 0 18 ( 0.0 $tc01m $tc02m )
 );
 
