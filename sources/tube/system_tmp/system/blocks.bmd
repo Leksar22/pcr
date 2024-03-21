@@ -1,0 +1,134 @@
+blocks (
+  // hex ( 0 12 13 14 1 2 3 4 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+  // hex ( 0 14 15 16 1 4 5 6 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+  // hex ( 0 16 17 18 1 6 7 8 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+  // hex ( 0 18 19 12 1 8 9 2 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+
+  // Скругление первоначального вариант
+  //hex ( 0 1 9 19 0 1 2 12 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+  //hex ( 0 1 2 12 0 1 3 13 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+  //hex ( 0 1 3 13 0 1 4 14 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+  //hex ( 0 1 4 14 0 1 5 15 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+  //hex ( 0 1 5 15 0 1 6 16 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+  //hex ( 0 1 6 16 0 1 7 17 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+  //hex ( 0 1 7 17 0 1 8 18 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+  //hex ( 0 1 8 18 0 1 9 19 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+  //
+
+
+  // hex ( 14 1 16 15 84 0 86 85 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+  // hex ( 12 1 14 13 82 0 84 83 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+  // hex ( 18 1 12 19 88 0 82 89 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+  // hex ( 16 1 18 17 86 0 88 87 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+
+
+// 27.02.24
+//  hex ( 99 92 2 9 89 82 12 19 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+//  hex ( 98 99 9 8 88 89 19 18 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+//  hex ( 97 98 8 7 87 88 18 17 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+//  hex ( 96 97 7 6 86 87 17 16 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+//  hex ( 95 96 6 5 85 86 16 15 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+//  hex ( 94 95 5 4 84 85 15 14 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+//  hex ( 93 94 4 3 83 84 14 13 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+//  hex ( 92 93 3 2 82 83 13 12 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+//
+//  hex ( 99 98 1 92 89 88 0 82 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+//  hex ( 97 96 1 98 87 86 0 88 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+//  hex ( 95 94 1 96 85 84 0 86 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+//  hex ( 93 92 1 94 83 82 0 84 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+// 27.02.24
+
+
+
+
+  hex ( 1 2 3 4 21 22 23 24 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+  hex ( 1 4 5 6 21 24 25 26 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+  hex ( 1 6 7 8 21 26 27 28 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+  hex ( 1 8 9 2 21 28 29 22 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+//
+//  // hex ( 7 17 18 8 1 2 12 19 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+//
+//  // "вытягиваем куб по высоте" к поверхности полусферы
+//  hex ( 0 83 84 85 1 4 5 6 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+//  hex ( 0 85 86 87 1 6 7 8 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+//  hex ( 0 87 88 81 1 8 9 2 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+//  hex ( 0 81 82 83 1 2 3 4 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+//
+//
+//  // !!!!!!!!!! соединяем с "вытянутым кубом"
+//  hex ( 13 14 83 82 3 4 83 82 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+//  hex ( 14 15 84 83 4 5 84 83 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+//
+//  hex ( 18 19 88 87 8 9 88 87 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+//  // до центра
+//  //hex ( 17 18 87 86 7 8 0 85 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+//  // до края
+//  hex ( 17 18 87 86 7 8 87 86 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+//
+//
+//  hex ( 16 17 86 85 6 7 86 85 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+//  hex ( 15 16 85 84 5 6 85 84 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+//
+//  hex ( 12 13 82 81 2 3 82 81 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+//  hex ( 19 12 81 88 9 2 81 88 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+//  // !!!!!!!!!!
+
+
+//  // ВТОРОЙ ВАРИАНТ
+//  hex ( 13 14 83 82 3 4 0 81 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+//  hex ( 14 15 84 83 4 5 85 0 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+//
+//  hex ( 18 19 88 87 8 9 81 0 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+//  hex ( 17 18 87 86 7 8 0 85 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+//
+//
+//  // hex ( 16 17 86 85 6 7 87 0 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+//  // hex ( 15 16 85 84 5 6 0 83 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+//
+//  // hex ( 12 13 82 81 2 3 83 0 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+//  // hex ( 19 12 81 88 9 2 0 87 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+//  // ВТОРОЙ ВАРИАНТ
+
+
+    hex ( 0 12 13 14 1 2 3 4 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+
+
+  hex ( 2 12 13 3 22 32 33 23 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+  hex ( 3 13 14 4 23 33 34 24 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+  hex ( 4 14 15 5 24 34 35 25 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+  hex ( 5 15 16 6 25 35 36 26 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+  hex ( 6 16 17 7 26 36 37 27 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+  hex ( 7 17 18 8 27 37 38 28 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+  hex ( 8 18 19 9 28 38 39 29 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+  hex ( 9 19 12 2 29 39 32 22 ) ( $nM $nM $nM ) simpleGrading ( 1 1 1 )
+
+  hex ( 21 22 23 24 41 42 43 44 ) ( $nM $nM $nL ) simpleGrading ( 1 1 $DnL )
+  hex ( 21 24 25 26 41 44 45 46 ) ( $nM $nM $nL ) simpleGrading ( 1 1 $DnL )
+  hex ( 21 26 27 28 41 46 47 48 ) ( $nM $nM $nL ) simpleGrading ( 1 1 $DnL )
+  hex ( 21 28 29 22 41 48 49 42 ) ( $nM $nM $nL ) simpleGrading ( 1 1 $DnL )
+
+  hex ( 22 32 33 23 42 52 53 43 ) ( $nM $nM $nL ) simpleGrading ( 1 1 $DnL )
+  hex ( 23 33 34 24 43 53 54 44 ) ( $nM $nM $nL ) simpleGrading ( 1 1 $DnL )
+  hex ( 24 34 35 25 44 54 55 45 ) ( $nM $nM $nL ) simpleGrading ( 1 1 $DnL )
+  hex ( 25 35 36 26 45 55 56 46 ) ( $nM $nM $nL ) simpleGrading ( 1 1 $DnL )
+  hex ( 26 36 37 27 46 56 57 47 ) ( $nM $nM $nL ) simpleGrading ( 1 1 $DnL )
+  hex ( 27 37 38 28 47 57 58 48 ) ( $nM $nM $nL ) simpleGrading ( 1 1 $DnL )
+  hex ( 28 38 39 29 48 58 59 49 ) ( $nM $nM $nL ) simpleGrading ( 1 1 $DnL )
+  hex ( 29 39 32 22 49 59 52 42 ) ( $nM $nM $nL ) simpleGrading ( 1 1 $DnL )
+
+  hex ( 41 42 43 44 61 62 63 64 ) ( $nM $nM $nH ) simpleGrading ( 1 1 1 )
+  hex ( 41 44 45 46 61 64 65 66 ) ( $nM $nM $nH ) simpleGrading ( 1 1 1 )
+  hex ( 41 46 47 48 61 66 67 68 ) ( $nM $nM $nH ) simpleGrading ( 1 1 1 )
+  hex ( 41 48 49 42 61 68 69 62 ) ( $nM $nM $nH ) simpleGrading ( 1 1 1 )
+
+  hex ( 42 52 53 43 62 72 73 63 ) ( $nM $nM $nH ) simpleGrading ( 1 1 1 )
+  hex ( 43 53 54 44 63 73 74 64 ) ( $nM $nM $nH ) simpleGrading ( 1 1 1 )
+  hex ( 44 54 55 45 64 74 75 65 ) ( $nM $nM $nH ) simpleGrading ( 1 1 1 )
+  hex ( 45 55 56 46 65 75 76 66 ) ( $nM $nM $nH ) simpleGrading ( 1 1 1 )
+  hex ( 46 56 57 47 66 76 77 67 ) ( $nM $nM $nH ) simpleGrading ( 1 1 1 )
+  hex ( 47 57 58 48 67 77 78 68 ) ( $nM $nM $nH ) simpleGrading ( 1 1 1 )
+  hex ( 48 58 59 49 68 78 79 69 ) ( $nM $nM $nH ) simpleGrading ( 1 1 1 )
+  hex ( 49 59 52 42 69 79 72 62 ) ( $nM $nM $nH ) simpleGrading ( 1 1 1 )
+);
+
+
