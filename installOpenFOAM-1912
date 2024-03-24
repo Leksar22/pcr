@@ -58,7 +58,7 @@ echo "*******************************************************"
 echo ""
 echo "Creating Docker OpenFOAM container ${containerName}"
 
-docker run -it -d --name ${containerName} --user=${user}   \
+docker run --privileged=true -it -d --name ${containerName} --user=${user}   \
     -e USER=${username}                                     \
     -e QT_X11_NO_MITSHM=1                                   \
     -e DISPLAY=${displayVar}                                \

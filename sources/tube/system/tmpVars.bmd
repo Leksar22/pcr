@@ -8,6 +8,32 @@
  tz3m    #calc "-1.0 * $tz3";
  tz1m_2    #calc "-1.0 * $tz1 - 0.1";
 
+ tz6      #calc "$sin30 * $Rb";  // z
+ tz6m    #calc "-1.0 * $tz6";
+
+ tz6xy  #calc "sqrt(1.0 - pow($tz6m, 2))";  // Rb
+ tz6xym  #calc "-1.0 * $tz6xy";  // tz0m
+ tz6xy_45 #calc "$tz6xy * $sin45"; // tz1
+ tz6xy_45m #calc "-1.0 * $tz6xy_45";  // tz1m
+
+ tc6_01 #calc "$sin225 * $tz6xy";
+ tc6_01m #calc "-1.0 * $tc6_01";
+ tc6_02 #calc "$sin675 * $tz6xy";
+ tc6_02m #calc "-1.0 * $tc6_02";
+
+ tz7     #calc "$sin60 * $Rb"; //tz1
+ tz7m     #calc "-1.0 * $tz7";  //tz1m
+ txy7_1  #calc "$sin30 * $tz7";  // txy1
+ txy7_1m  #calc "-1.0 * $txy7_1"; // txy1m
+
+ t_test_x #calc "$tz1 / 2.0";
+ t_test_y #calc "sqrt(pow($Rb, 2) - pow($t_test_x, 2) - pow($tz1m, 2))";
+
+// A: ( 0.0   $tz1m  $tz1m )
+// B:  ( $tz1   0.0    $tz1m )
+
+// C: ( $txy7_1  $txy7_1m $tz1m )
+
  // tz111    #calc " $tz1 * $a2 * $sin45";
  //tz111    #calc " $Rb / 2.0 ";
  tz111    #calc " $Rb / 1.9 ";

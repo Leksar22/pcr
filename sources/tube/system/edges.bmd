@@ -18,14 +18,14 @@ edges
   arc 58 59 ( $tc61  $tc62m $tz5 )
   arc 59 52 ( $tc62  $tc61m $tz5 )
 
-  arc 32 33 ( $tc02  $tc01  0.0 )
-  arc 33 34 ( $tc01  $tc02  0.0 )
-  arc 34 35 ( $tc01m $tc02  0.0 )
-  arc 35 36 ( $tc02m $tc01  0.0 )
-  arc 36 37 ( $tc02m $tc01m 0.0 )
-  arc 37 38 ( $tc01m $tc02m 0.0 )
-  arc 38 39 ( $tc01  $tc02m 0.0 )
-  arc 39 32 ( $tc02  $tc01m 0.0 )
+  arc 32 33 ( $tc6_02  $tc6_01  $tz6m )
+  arc 33 34 ( $tc6_01  $tc6_02  $tz6m )
+  arc 34 35 ( $tc6_01m $tc6_02  $tz6m )
+  arc 35 36 ( $tc6_02m $tc6_01  $tz6m )
+  arc 36 37 ( $tc6_02m $tc6_01m $tz6m )
+  arc 37 38 ( $tc6_01m $tc6_02m $tz6m )
+  arc 38 39 ( $tc6_01  $tc6_02m $tz6m )
+  arc 39 32 ( $tc6_02  $tc6_01m $tz6m )
 
 //  arc 12 32 ( #calc "cos(3.1415926/8.0) * $Rb"  0.0 #calc "- sin(3.1415926/8.0) * $Rb" )
 //  arc 12 32 ( $tc02 0.0 $tc01m )
@@ -39,20 +39,11 @@ edges
   arc 18 19 ( $tc31 $tc32m $tz1m )
   arc 19 12 ( $tc32 $tc31m $tz1m )
 
+ // arc 19 39 ( $txy1  $txy1m $tz1m )
+
+
   arc 0 12 ( $tc01 0.0 $tc02m )
   arc 0 14 ( 0.0 $tc01 $tc02m )
   arc 0 16 ( $tc01m 0.0 $tc02m )
   arc 0 18 ( 0.0 $tc01m $tc02m )
-
-  arc 36 16 ( $txy333 $txy333  $tz2m )  // 15 высота
-  arc 34 14 ( $txy333 $txy333m  $tz2m )  // 15
-  arc 32 12 ( $txy333m $txy333  $tz2m )  // 15
-  arc 38 18 ( $txy333 $txy333  $tz2m )  // 15
-
-  arc 33 13 ( $txyTTT $txyTTT  $tzZZZm )
-  arc 35 15 ( $txyTTT $txyTTT  $tzZZZm )
-  arc 37 17 ( $txyTTTm $txyTTTm  $tzZZZm )
-  arc 39 19 ( $txyTTT $txyTTT  $tzZZZm )
-
 );
-

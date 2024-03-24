@@ -22,15 +22,15 @@ FoamFile
     {
         type            wall;
         inGroups        1(wall);
-        nFaces          32;
-        startFace       100;
+        nFaces          15456;
+        startFace       913360;
     }
     defaultFaces
     {
         type            empty;
         inGroups        1(empty);
-        nFaces          8;
-        startFace       132;
+        nFaces          1792;
+        startFace       928816;
     }
 )
 
