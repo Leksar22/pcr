@@ -73,6 +73,13 @@
  txy4    #calc "$a2 * $tz3";
  txy4m   #calc "-1.0 * $txy4";
 
+// 13 15
+// ( $txy1  $txy1  $tz1m ) ( $txy1m $txy1  $tz1m )
+
+ t_test_xy # calc "$txy1";    // #calc "-1.0 * ($Rb * $sin0 + $Rb * $sin90) / 2.0 * $sin45";  # сместили угловые точки (где проблемный участок сетки)
+ t_test_xy_m # calc "-1.0 * $t_test_xy";
+ t_test_z # calc "-1.0 * sqrt(pow($Rb, 2) - pow($t_test_xy, 2))";
+
  Lw      #calc "sqrt(((double)$R - $Rb)*($R - $Rb) + $L*$L)";
  tz5     #calc "$L * ($Lw - $Lh) / $Lw";
  tx6     #calc "($Lw - $Lh) * ($R - $Rb)/$Lw + $Rb";
@@ -124,6 +131,32 @@
 // 15
 //( $t_test_xy_m $t_test_xy  $t_test_z )
 
-t_x_super # calc "$Rb / sqrt(2.0) + sqrt(pow($Rb / sqrt(2.0), 2) / 2.0) * -1.0"; // # calc "pow($t_test_xy - $Rb / sqrt(2.0), 2)";   //
-t_x_super_m # calc "-1.0 * $t_x_super";
-t_z_super # calc " sqrt(pow($Rb / sqrt(2.0), 2) - pow($t_x_super, 2) * 2.0)";
+ t_x_super # calc "$tz1";   //
+ t_x_super_m # calc "-1.0 * $t_x_super";
+ t_z_super # calc "sqrt(pow($Rb / sqrt(2.0), 2) - pow($t_x_super, 2) )";
+
+// 12
+// ( $t_test_xy   0.0    $t_test_z )
+// 14
+// ( 0.0   $t_test_xy   $t_test_z )
+
+ // центральная точка на отрезках [12, 14], [14, 15]
+ // 12 ( $t_test_xy   0.0    $t_test_z ) // 13 ( $txy1  $txy1  $tz1m )
+ // 14 ( 0.0   $t_test_xy   $t_test_z ) // 15 ( $txy1m $txy1  $tz1m )
+ t_x_super_1 # calc "($t_test_xy + $txy1) / 2.0";
+ t_x_super_1_m # calc "-1.0 * $t_x_super_1";
+ t_y_super_1 # calc "$txy1 / 2.0";
+ t_y_super_1_m # calc "-1.0 * $t_y_super_1";
+
+ //t_x_super_2 # calc "$txy1m / 2.0";
+ //t_x_super_2_m # calc "-1.0 * $t_x_super_2";
+ //t_y_super_2 # calc "($txy1 + $t_test_xy) / 2.0";
+ //t_y_super_2_m # calc "-1.0 * $t_y_super_2";
+
+ t_z_super # calc "-1.0 * sqrt(pow($Rb, 2) - pow($t_y_super_1, 2) - pow($t_x_super_1, 2))";
+
+// 13 ( $txy1  $txy1  $tz1m )
+// 33 ( $tz6xy_45   $tz6xy_45   $tz6m   )
+ t_center_x # calc "($txy1 + $tz6xy_45) / 2.0";
+ t_center_x_m # calc "-1.0 * $t_center_x";
+ t_center_z # calc "-1.0 * sqrt(pow($Rb, 2) - pow($t_center_x, 2) * 2)";

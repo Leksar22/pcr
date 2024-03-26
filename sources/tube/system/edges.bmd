@@ -30,19 +30,25 @@ edges
 //  arc 12 32 ( #calc "cos(3.1415926/8.0) * $Rb"  0.0 #calc "- sin(3.1415926/8.0) * $Rb" )
 //  arc 12 32 ( $tc02 0.0 $tc01m )
 
-// arc 12 13 ( $t_x_super $t_x_super $t_z_super )
- arc 13 14 ( $t_x_super $t_x_super $t_z_super )
-// arc 14 15 ( $tc31m $tc32 $tz1m )
-// arc 15 16 ( $tc32m $tc31 $tz1m )
-// arc 16 17 ( $tc32m $tc31m $tz1m )
-// arc 17 18 ( $tc31m $tc32m $tz1m )
-// arc 18 19 ( $tc31 $tc32m $tz1m )
-// arc 19 12 ( $tc32 $tc31m $tz1m )
+ arc 12 13 ( $t_x_super_1 $t_y_super_1 $t_z_super )
+ arc 13 14 ( $t_y_super_1 $t_x_super_1 $t_z_super )
+ arc 14 15 ( $t_y_super_1_m $t_x_super_1 $t_z_super )
+ arc 15 16 ( $t_x_super_1_m $t_y_super_1 $t_z_super )
+ arc 16 17 ( $t_x_super_1_m $t_y_super_1_m $t_z_super )
+ arc 17 18 ( $t_y_super_1 $t_x_super_1_m $t_z_super )
+ arc 18 19 ( $t_y_super_1 $t_x_super_1_m $t_z_super )
+ arc 19 12 ( $t_x_super_1 $t_y_super_1_m $t_z_super )
 
-  arc 13 33 ( $txy1  $txy1  $tz1m )
-  arc 15 35 ( $txy1m $txy1  $tz1m )
-  arc 17 37 ( $txy1m $txy1m $tz1m )
-  arc 19 39 ( $txy1  $txy1m $tz1m )
+  arc 12 32 ( $tz1   0.0    $tz1m )
+  arc 14 34 ( 0.0   $tz1   $tz1m )
+  arc 16 36  ( $tz1m  0.0    $tz1m )
+  arc 18 38 ( 0.0   $tz1m  $tz1m )
+
+  arc 13 33 ( $t_center_x   $t_center_x   $t_center_z )
+  arc 17 37 ( $t_center_x_m   $t_center_x_m   $t_center_z )
+  arc 15 35 ( $t_center_x_m   $t_center_x   $t_center_z )
+  arc 19 39 ( $t_center_x   $t_center_x_m   $t_center_z )
+
 
 
 
