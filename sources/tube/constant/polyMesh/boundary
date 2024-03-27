@@ -16,21 +16,28 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-2
+3
 (
+    hot
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          1176;
+        startFace       913360;
+    }
+    cold
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          616;
+        startFace       914536;
+    }
     walls
     {
         type            wall;
         inGroups        1(wall);
         nFaces          15456;
-        startFace       913360;
-    }
-    defaultFaces
-    {
-        type            empty;
-        inGroups        1(empty);
-        nFaces          1792;
-        startFace       928816;
+        startFace       915152;
     }
 )
 

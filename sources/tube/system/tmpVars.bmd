@@ -11,7 +11,7 @@
 
  k_normal # calc "($R - (($Lw - $Lh) * ($R - $Rb)/$Lw + $Rb)) / ($sin60 * $Rb - ($L * ($Lw - $Lh) / sqrt(((double)$R - $Rb)*($R - $Rb) + $L*$L)))"; // угловой коэфф между 72 и 52 в плоскости XOZ
  alpha_normal  # calc "atan($k_normal)";
- tz6      #calc "sin(45.0 - $alpha_normal) * $Rb";  // z
+ tz6      #calc "sin(45.0 + 90.0) * sin($alpha_normal) * $Rb";  // z
  tz6m    #calc "-1.0 * $tz6";
 
  tz6xy  #calc "sqrt(1.0 - pow($tz6m, 2))";  // Rb
@@ -24,47 +24,10 @@
  tc6_02 #calc "$sin675 * $tz6xy";
  tc6_02m #calc "-1.0 * $tc6_02";
 
-
-
  tz7     #calc "$sin60 * $Rb"; //tz1
  tz7m     #calc "-1.0 * $tz7";  //tz1m
  txy7_1  #calc "$sin30 * $tz7";  // txy1
  txy7_1m  #calc "-1.0 * $txy7_1"; // txy1m
-
- t_test_xy # calc "$tz1 / 2.0";    // #calc "-1.0 * ($Rb * $sin0 + $Rb * $sin90) / 2.0 * $sin45";  # сместили угловые точки (где проблемный участок сетки)
- t_test_xy_m # calc "-1.0 * $t_test_xy";
- t_test_z # calc "-1.0 * sqrt(pow($Rb, 2) - pow($t_test_xy, 2))";
- // t_test_z_1 # calc "-1.0 * sqrt(pow($Rb, 2) - pow($tz1m, 2))"; // (для углов полусферы, т.к. вероятно в исходной реализации была неправильная высота)
-
-// 32 т. x=$tz6xy z=$tz6m
-// 72 x=$tx8 z=$tz7
- // t_test_y #calc "sqrt(pow($Rb, 2) - pow($t_test_x, 2) - pow($tz1m, 2))";
-
-// A: ( 0.0   $tz1m  $tz1m )
-// B:  ( $tz1   0.0    $tz1m )
-
-// C: ( $txy7_1  $txy7_1m $tz1m )
-
- // tz111    #calc " $tz1 * $a2 * $sin45";
- //tz111    #calc " $Rb / 2.0 ";
- tz111    #calc " $Rb / 1.9 ";
- tz111m   #calc "-1.0 * $tz111 ";
- txy333     #calc "$a2 *  $tz111";
- txy333m     #calc " -1.0 * $txy333 ";
-
- tc0222    #calc "$sin45 * $a2 ";
- tc0222m   #calc " -1.0 * $tc0222";
- tc0111   #calc "$sin45 * $a2 ";
- tc0111m   #calc " -1.0 * $tc0111";
-
-
- txyTTT  #calc " $txy333m * $sin45";
- txyTTTm  #calc " $txyTTT * -1.0";
- tzZZZ  #calc " $tz2 * $sin45";
- tzZZZm  #calc " -1.0 * $tzZZZ";
-
-
- tz222m   #calc " -1.0 * $tz1 * $a2 * $sin45";
 
  txy1    #calc "$sin45 * $tz1";
  txy1m   #calc "-1.0 * $txy1";
