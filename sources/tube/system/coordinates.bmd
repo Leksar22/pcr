@@ -3,13 +3,15 @@ vertices (
   ( 0.0    0.0    $tz2m ) // 1
   ( $tz3   0.0    $tz3m ) ( $txy3  $txy3  $tz3m ) ( 0.0   $tz3   $tz3m ) ( $txy3m $txy3  $tz3m )
   ( $tz3m  0.0    $tz3m ) ( $txy3m $txy3m $tz3m ) ( 0.0   $tz3m  $tz3m ) ( $txy3  $txy3m $tz3m ) ( 0 0 0 ) ( 0 0 0 ) // 11
-  ( $tz1   0.0    $tz1m ) ( $txy1  $txy1  $tz1m ) ( 0.0   $tz1   $tz1m ) ( $txy1m $txy1  $tz1m )
-  ( $tz1m  0.0    $tz1m ) ( $txy1m $txy1m $tz1m ) ( 0.0   $tz1m  $tz1m ) ( $txy1  $txy1m $tz1m ) ( 0 0 0 ) // 20
+  ( $t_test_xy   0.0    $t_test_z ) ( $txy1  $txy1  $tz1m ) ( 0.0   $t_test_xy   $t_test_z ) ( $txy1m $txy1  $tz1m )
+  ( $t_test_xy_m  0.0    $t_test_z ) ( $txy1m $txy1m $tz1m ) ( 0.0   $t_test_xy_m  $t_test_z ) ( $txy1  $txy1m $tz1m ) ( 0 0 0 ) // 20
+
   ( 0.0    0.0    0.0   ) // 21
   ( $tz2   0.0    0.0   ) ( $txy4  $txy4  0.0   ) ( 0.0   $tz2   0.0   ) ( $txy4m $txy4  0.0 )
   ( $tz2m  0.0    0.0   ) ( $txy4m $txy4m 0.0   ) ( 0.0   $tz2m  0.0   ) ( $txy4  $txy4m 0.0 ) ( 0 0 0 ) ( 0 0 0 ) // 31
-  ( $Rb    0.0    0.0   ) ( $tz1   $tz1   0.0   ) ( 0.0   $Rb    0.0   ) ( $tz1m  $tz1   0.0 )
-  ( $tz0m  0.0    0.0   ) ( $tz1m  $tz1m  0.0   ) ( 0.0   $tz0m  0.0   ) ( $tz1   $tz1m  0.0 ) ( 0 0 0 ) // 40
+  ( $tz6xy   0.0    $tz6m   ) ( $tz6xy_45   $tz6xy_45   $tz6m   ) ( 0.0   $tz6xy    $tz6m   ) ( $tz6xy_45m  $tz6xy_45   $tz6m )
+  ( $tz6xym  0.0    $tz6m   ) ( $tz6xy_45m  $tz6xy_45m  $tz6m   ) ( 0.0   $tz6xym  $tz6m   ) ( $tz6xy_45   $tz6xy_45m  $tz6m ) ( 0 0 0 ) // 40
+
   ( 0.0    0.0    $tz5  ) // 41
   ( $tx5   0.0    $tz5  ) ( $txy5  $txy5  $tz5  ) ( 0.0   $tx5   $tz5  ) ( $txy5m $txy5  $tz5 )
   ( $tx5m  0.0    $tz5  ) ( $txy5m $txy5m $tz5  ) ( 0.0   $tx5m  $tz5  ) ( $txy5  $txy5m $tz5 ) ( 0 0 0 ) ( 0 0 0 ) // 51

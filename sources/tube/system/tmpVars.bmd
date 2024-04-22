@@ -6,6 +6,28 @@
  tz2m    #calc "-1.0 * $tz2";
  tz3     #calc "$sin45 * $a1 * $Rb";
  tz3m    #calc "-1.0 * $tz3";
+ tz1m_2    #calc "-1.0 * $tz1 - 0.1";
+
+
+ k_normal # calc "($R - (($Lw - $Lh) * ($R - $Rb)/$Lw + $Rb)) / ($sin60 * $Rb - ($L * ($Lw - $Lh) / sqrt(((double)$R - $Rb)*($R - $Rb) + $L*$L)))"; // угловой коэфф между 72 и 52 в плоскости XOZ
+ alpha_normal  # calc "atan($k_normal)";
+ tz6      #calc "sin(45.0 + 90.0) * sin($alpha_normal) * $Rb";  // z
+ tz6m    #calc "-1.0 * $tz6";
+
+ tz6xy  #calc "sqrt(1.0 - pow($tz6m, 2))";  // Rb
+ tz6xym  #calc "-1.0 * $tz6xy";  // tz0m
+ tz6xy_45 #calc "$tz6xy * $sin45"; // tz1
+ tz6xy_45m #calc "-1.0 * $tz6xy_45";  // tz1m
+
+ tc6_01 #calc "$sin225 * $tz6xy";
+ tc6_01m #calc "-1.0 * $tc6_01";
+ tc6_02 #calc "$sin675 * $tz6xy";
+ tc6_02m #calc "-1.0 * $tc6_02";
+
+ tz7     #calc "$sin60 * $Rb"; //tz1
+ tz7m     #calc "-1.0 * $tz7";  //tz1m
+ txy7_1  #calc "$sin30 * $tz7";  // txy1
+ txy7_1m  #calc "-1.0 * $txy7_1"; // txy1m
 
  txy1    #calc "$sin45 * $tz1";
  txy1m   #calc "-1.0 * $txy1";
@@ -14,7 +36,14 @@
  txy4    #calc "$a2 * $tz3";
  txy4m   #calc "-1.0 * $txy4";
 
- Lw      #calc "sqrt((double)($R - $Rb)*($R - $Rb) + $L*$L)";
+// 13 15
+// ( $txy1  $txy1  $tz1m ) ( $txy1m $txy1  $tz1m )
+
+ t_test_xy # calc "$txy1";    // #calc "-1.0 * ($Rb * $sin0 + $Rb * $sin90) / 2.0 * $sin45";  # сместили угловые точки (где проблемный участок сетки)
+ t_test_xy_m # calc "-1.0 * $t_test_xy";
+ t_test_z # calc "-1.0 * sqrt(pow($Rb, 2) - pow($t_test_xy, 2))";
+
+ Lw      #calc "sqrt(((double)$R - $Rb)*($R - $Rb) + $L*$L)";
  tz5     #calc "$L * ($Lw - $Lh) / $Lw";
  tx6     #calc "($Lw - $Lh) * ($R - $Rb)/$Lw + $Rb";
 
@@ -58,4 +87,39 @@
  tc81m   #calc "-1.0 * $tc81";
  tc82    #calc "$sin675 * $tx8";
  tc82m   #calc "-1.0 * $tc82";
- 
+
+// 13
+// ( $t_test_xy  $t_test_xy  $t_test_z )
+
+// 15
+//( $t_test_xy_m $t_test_xy  $t_test_z )
+
+ t_x_super # calc "$tz1";   //
+ t_x_super_m # calc "-1.0 * $t_x_super";
+ t_z_super # calc "sqrt(pow($Rb / sqrt(2.0), 2) - pow($t_x_super, 2) )";
+
+// 12
+// ( $t_test_xy   0.0    $t_test_z )
+// 14
+// ( 0.0   $t_test_xy   $t_test_z )
+
+ // центральная точка на отрезках [12, 14], [14, 15]
+ // 12 ( $t_test_xy   0.0    $t_test_z ) // 13 ( $txy1  $txy1  $tz1m )
+ // 14 ( 0.0   $t_test_xy   $t_test_z ) // 15 ( $txy1m $txy1  $tz1m )
+ t_x_super_1 # calc "($t_test_xy + $txy1) / 2.0";
+ t_x_super_1_m # calc "-1.0 * $t_x_super_1";
+ t_y_super_1 # calc "$txy1 / 2.0";
+ t_y_super_1_m # calc "-1.0 * $t_y_super_1";
+
+ //t_x_super_2 # calc "$txy1m / 2.0";
+ //t_x_super_2_m # calc "-1.0 * $t_x_super_2";
+ //t_y_super_2 # calc "($txy1 + $t_test_xy) / 2.0";
+ //t_y_super_2_m # calc "-1.0 * $t_y_super_2";
+
+ t_z_super # calc "-1.0 * sqrt(pow($Rb, 2) - pow($t_y_super_1, 2) - pow($t_x_super_1, 2))";
+
+// 13 ( $txy1  $txy1  $tz1m )
+// 33 ( $tz6xy_45   $tz6xy_45   $tz6m   )
+ t_center_x # calc "($txy1 + $tz6xy_45) / 2.0";
+ t_center_x_m # calc "-1.0 * $t_center_x";
+ t_center_z # calc "-1.0 * sqrt(pow($Rb, 2) - pow($t_center_x, 2) * 2)";

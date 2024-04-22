@@ -48,8 +48,9 @@ paraFoam
 
 
 
+chmod u+x installOpenFOAM-1912
+./installOpenFOAM-1912
+chmod u+x startOpenFOAM-1912
 
-
-
-
-
+./startOpenFOAM-1912
+docker cp sources/tube container:/of_v1912/

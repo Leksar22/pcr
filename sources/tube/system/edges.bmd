@@ -18,30 +18,41 @@ edges
   arc 58 59 ( $tc61  $tc62m $tz5 )
   arc 59 52 ( $tc62  $tc61m $tz5 )
 
-  arc 32 33 ( $tc02  $tc01  0.0 )
-  arc 33 34 ( $tc01  $tc02  0.0 )
-  arc 34 35 ( $tc01m $tc02  0.0 )
-  arc 35 36 ( $tc02m $tc01  0.0 )
-  arc 36 37 ( $tc02m $tc01m 0.0 )
-  arc 37 38 ( $tc01m $tc02m 0.0 )
-  arc 38 39 ( $tc01  $tc02m 0.0 )
-  arc 39 32 ( $tc02  $tc01m 0.0 )
+  arc 32 33 ( $tc6_02  $tc6_01  $tz6m )
+  arc 33 34 ( $tc6_01  $tc6_02  $tz6m )
+  arc 34 35 ( $tc6_01m $tc6_02  $tz6m )
+  arc 35 36 ( $tc6_02m $tc6_01  $tz6m )
+  arc 36 37 ( $tc6_02m $tc6_01m $tz6m )
+  arc 37 38 ( $tc6_01m $tc6_02m $tz6m )
+  arc 38 39 ( $tc6_01  $tc6_02m $tz6m )
+  arc 39 32 ( $tc6_02  $tc6_01m $tz6m )
 
 //  arc 12 32 ( #calc "cos(3.1415926/8.0) * $Rb"  0.0 #calc "- sin(3.1415926/8.0) * $Rb" )
 //  arc 12 32 ( $tc02 0.0 $tc01m )
 
-  arc 12 13 ( $tc32 $tc31 $tz1m )
-  arc 13 14 ( $tc31 $tc32 $tz1m )
-  arc 14 15 ( $tc31m $tc32 $tz1m )
-  arc 15 16 ( $tc32m $tc31 $tz1m )
-  arc 16 17 ( $tc32m $tc31m $tz1m )
-  arc 17 18 ( $tc31m $tc32m $tz1m )
-  arc 18 19 ( $tc31 $tc32m $tz1m )
-  arc 19 12 ( $tc32 $tc31m $tz1m )
+  // t_x_super_1 x0 = x1, x0, x1, > 0
+  // t_y_super_1 y0 != y1, y0, y1 >= 0
+  arc 12 13 ( $t_x_super_1 $t_y_super_1 $t_z_super )
+  arc 13 14 ( $t_y_super_1 $t_x_super_1 $t_z_super )
+  arc 14 15 ( $t_y_super_1_m $t_x_super_1 $t_z_super )
+  arc 15 16 ( $t_x_super_1_m $t_y_super_1 $t_z_super )
+  arc 16 17 ( $t_x_super_1_m $t_y_super_1_m $t_z_super )
+  arc 17 18 ( $t_y_super_1_m $t_x_super_1_m $t_z_super )
+  arc 18 19 ( $t_y_super_1 $t_x_super_1_m $t_z_super )
+  arc 19 12 ( $t_x_super_1 $t_y_super_1_m $t_z_super )
+
+  arc 12 32 ( $tz1   0.0    $tz1m )
+  arc 14 34 ( 0.0   $tz1   $tz1m )
+  arc 16 36  ( $tz1m  0.0    $tz1m )
+  arc 18 38 ( 0.0   $tz1m  $tz1m )
+
+  arc 13 33 ( $t_center_x   $t_center_x   $t_center_z )
+  arc 17 37 ( $t_center_x_m   $t_center_x_m   $t_center_z )
+  arc 15 35 ( $t_center_x_m   $t_center_x   $t_center_z )
+  arc 19 39 ( $t_center_x   $t_center_x_m   $t_center_z )
 
   arc 0 12 ( $tc01 0.0 $tc02m )
   arc 0 14 ( 0.0 $tc01 $tc02m )
   arc 0 16 ( $tc01m 0.0 $tc02m )
   arc 0 18 ( 0.0 $tc01m $tc02m )
 );
-
